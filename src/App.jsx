@@ -8,21 +8,23 @@ function App() {
   let [counter , setCounter] = useState(0)
 
 
-  // let counter = 15 
+ 
 
   const addValue = () => {
-    console.log("value added", counter);
-    counter = counter + 1 ;
-    setCounter(counter)
+    
+    if(counter < 20){
+    setCounter(counter + 1 )
     
   }
+}
 
   const removeValue = () => {
-    console.log("value removed", counter);
-    counter = counter - 1 ;
-    setCounter(counter)
+    
+    if (counter > 0){
+    setCounter(counter - 1)
     
   }
+ }
 
   return (
     <>
